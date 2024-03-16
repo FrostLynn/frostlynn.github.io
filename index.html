@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Core theme CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        function setHalfVolume() {
+            var myAudio = document.getElementById("audio");
+            myAudio.volume = 0.4;
+        }
+    </script>
   </head>
 
   <body>
@@ -77,13 +83,6 @@
     </div>
 
     <audio id="audio" style="display:none;" src="assets/mp3/music.mp3" controls autoplay loop onloadeddata="setHalfVolume()">
-
-      <script>
-        function setHalfVolume() {
-            var myAudio = document.getElementById("audio");
-            myAudio.volume = 0.4;
-        }
-    </script>
     
   </body>
 
